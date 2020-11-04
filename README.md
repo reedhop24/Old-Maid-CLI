@@ -1,0 +1,7 @@
+# Old Maid Command Line
+
+##### This game is the command line version of the classic childrens card game Old Maid. In the game the deck has an extra Old Maid card. The deck is then distrubted evenly among players, players then match cards based solely on the card(suit does not matter). Once all of the initial pairs have been made and no matches remain they then begin randomly drawing from the other players deck and discarding pairs when possible. The player that is left with the Old Maid when all other players have no cards is the loser. Since this is a CLI game, the user is only allowed to play against the computer. 
+
+##### The functionality for the game is broken down into one object with six methods. The methods computer_deal() and player_deal() append random cards onto the computers hand and the players hand respectively. computer_match() and player_match() are methods which allow for cards within the deck to be matched, the player_match method is handed in user input to represent the pairs to discard. player_draw() and computer_draw() both draw random cards for the opposite deck. 
+
+##### Game play is ran through index.py and I am utilizing recursion to either call a new instance of round() or declare a winner.
